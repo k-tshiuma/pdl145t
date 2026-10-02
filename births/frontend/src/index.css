@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── PDL-145T — Sovereign Clinical & Civil Infrastructure ────────────── */
+
+@layer base {
+  /* Import fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-brand-purple text-primary-text font-sans;
+  }
+}
+
+@layer components {
+  /* ── Sovereign Flag Accent Dot — mandatory field indicator ─────────── */
+  .required-dot::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0077C8, #0E8A54, #FCD116);
+    vertical-align: middle;
+  }
+
+  /* ── ID / Code fields — JetBrains Mono ────────────────────────────── */
+  .font-id {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── Provisoire warning banner ────────────────────────────────────── */
+  .provisoire-banner {
+    @apply bg-golden-yellow/20 border border-golden-yellow/40 rounded-lg px-4 py-3 text-body-sm;
+    color: #4d3e00;
+  }
+
+  .provisoire-banner::before {
+    content: '⚠️ ';
+  }
+}
+
+@layer utilities {
+  /* No box-shadow depth — use tonal contrast and borders only (DESIGN.md rule) */
+  .elevation-none {
+    box-shadow: none !important;
+  }
+}

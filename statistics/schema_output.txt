@@ -1,0 +1,266 @@
+--- TABLES ---
+Table: knex_migrations
+Schema: CREATE TABLE `knex_migrations` (`id` integer not null primary key autoincrement, `name` varchar(255), `batch` integer, `migration_time` datetime)
+
+Table: sqlite_sequence
+Schema: CREATE TABLE sqlite_sequence(name,seq)
+
+Table: knex_migrations_lock
+Schema: CREATE TABLE `knex_migrations_lock` (`index` integer not null primary key autoincrement, `is_locked` integer)
+
+Table: provinces
+Schema: CREATE TABLE `provinces` (`id` text, `name` text not null, `code` text, `created_at` datetime default CURRENT_TIMESTAMP, primary key (`id`))
+
+Table: communes_sectors
+Schema: CREATE TABLE `communes_sectors` (`id` text, `name` text not null, `type` text not null check (`type` in ('commune','secteur','ville')), `territory_id` text not null, foreign key(`territory_id`) references `territories`(`id`) on delete RESTRICT, primary key (`id`))
+
+Table: villages_quarters
+Schema: CREATE TABLE `villages_quarters` (`id` text, `name` text not null, `commune_sector_id` text not null, foreign key(`commune_sector_id`) references `communes_sectors`(`id`) on delete RESTRICT, primary key (`id`))
+
+Table: roles
+Schema: CREATE TABLE `roles` (`id` text, `name` text not null, `description` text, `permissions` text not null default '{}', `created_at` datetime default CURRENT_TIMESTAMP, primary key (`id`))
+
+Table: users
+Schema: CREATE TABLE `users` (`id` text, `username` text not null, `email` text, `password_hash` text not null, `first_name` text, `last_name` text, `role_id` text not null, `health_center_id` text, `province_id` text, `territory_id` text, `is_active` integer not null default '1', `failed_login_attempts` integer not null default '0', `locked_until` datetime, `last_login` datetime, `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, foreign key(`role_id`) references `roles`(`id`) on delete RESTRICT, foreign key(`province_id`) references `provinces`(`id`) on delete SET NULL, foreign key(`territory_id`) references `territories`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: health_centers
+Schema: CREATE TABLE `health_centers` (`id` text, `name` text not null, `code` text, `territory_id` text not null, `commune_sector_id` text, `address` text, `phone` text, `director_name` text, `is_active` integer not null default '1', `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, foreign key(`territory_id`) references `territories`(`id`) on delete RESTRICT, foreign key(`commune_sector_id`) references `communes_sectors`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: parents
+Schema: CREATE TABLE `parents` (`id` text, `nin` text, `first_names` text not null, `last_name` text not null, `post_names` text, `birth_date` date, `gender` text check (`gender` in ('M','F')), `civil_status` text check (`civil_status` in ('marie','celibataire','divorce','veuf')), `email` text, `phone` text, `profession` text, `address_avenue` text, `address_number` text, `village_quarter_id` text, `commune_sector_id` text, `territory_id` text, `province_id` text, `created_by` text, `updated_by` text, `sync_status` text not null default 'LOCAL' check (`sync_status` in ('LOCAL','PENDING','SYNCED','CONFLICT')), `local_id` text, `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, `address_quarter_village` text, `address_commune_sector` text, `address_territory` text, `address_city` text, `address_province` text, foreign key(`village_quarter_id`) references `villages_quarters`(`id`) on delete SET NULL, foreign key(`commune_sector_id`) references `communes_sectors`(`id`) on delete SET NULL, foreign key(`territory_id`) references `territories`(`id`) on delete SET NULL, foreign key(`province_id`) references `provinces`(`id`) on delete SET NULL, foreign key(`created_by`) references `users`(`id`) on delete SET NULL, foreign key(`updated_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: children
+Schema: CREATE TABLE `children` (`id` text, `system_id` text, `first_names` text not null, `last_name` text not null, `post_names` text, `birth_datetime` datetime not null, `birth_place` text, `gender` text check (`gender` in ('M','F','INDETERMINE')), `birth_type` text not null default 'SINGLE' check (`birth_type` in ('SINGLE','TWIN','TRIPLET','OTHER')), `birth_order` integer default '1', `father_id` text, `mother_id` text, `father_unknown` integer not null default '0', `mother_unknown` integer not null default '0', `father_unknown_reason` text, `mother_unknown_reason` text, `created_by` text, `updated_by` text, `sync_status` text not null default 'LOCAL' check (`sync_status` in ('LOCAL','PENDING','SYNCED','CONFLICT')), `local_id` text, `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, foreign key(`father_id`) references `parents`(`id`) on delete SET NULL, foreign key(`mother_id`) references `parents`(`id`) on delete SET NULL, foreign key(`created_by`) references `users`(`id`) on delete SET NULL, foreign key(`updated_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: births
+Schema: CREATE TABLE `births` (`id` text, `child_id` text not null, `health_center_id` text not null, `registered_by` text not null, `status` text not null default 'DRAFT' check (`status` in ('DRAFT','IN_PROGRESS','VALIDATED','CANCELLED')), `validated_by` text, `validated_at` datetime, `cancellation_reason` text, `draft_data` text, `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, foreign key(`child_id`) references `children`(`id`) on delete CASCADE, foreign key(`health_center_id`) references `health_centers`(`id`) on delete RESTRICT, foreign key(`registered_by`) references `users`(`id`) on delete RESTRICT, foreign key(`validated_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: clinical_examinations
+Schema: CREATE TABLE `clinical_examinations` (`id` text, `birth_id` text not null, `apgar_1min` integer, `apgar_5min` integer, `apgar_notes` text, `physical_exam_done` integer not null default '0', `physical_exam_datetime` datetime, `physical_exam_professional` text, `physical_exam_results` text, `physical_exam_notes` text, `blood_group` text check (`blood_group` in ('A','B','AB','O','UNKNOWN')), `blood_rhesus` text check (`blood_rhesus` in ('POS','NEG','UNKNOWN')), `blood_status` text not null default 'NOT_DONE' check (`blood_status` in ('DONE','NOT_DONE','UNKNOWN')), `pulse_oximetry_done` integer not null default '0', `pulse_oximetry_value` float, `pulse_oximetry_notes` text, `created_by` text, `updated_by` text, `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, foreign key(`birth_id`) references `births`(`id`) on delete CASCADE, foreign key(`created_by`) references `users`(`id`) on delete SET NULL, foreign key(`updated_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: screenings
+Schema: CREATE TABLE `screenings` (`id` text, `birth_id` text not null, `type` text not null check (`type` in ('GUTHRIE','AUDITORY','BILIRUBIN','OTHER')), `done` integer not null default '0', `screening_datetime` datetime, `method` text, `result` text, `value` float, `unit` text, `notes` text, `professional` text, `created_by` text, `created_at` datetime default CURRENT_TIMESTAMP, foreign key(`birth_id`) references `births`(`id`) on delete CASCADE, foreign key(`created_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: vaccines
+Schema: CREATE TABLE `vaccines` (`id` text, `birth_id` text not null, `vaccine_type` text not null check (`vaccine_type` in ('HEPATITIS_B','BCG','OTHER')), `administered` integer not null default '0', `administered_at` datetime, `professional` text, `health_center_id` text, `batch_number` text, `notes` text, `non_administration_reason` text, `created_by` text, `created_at` datetime default CURRENT_TIMESTAMP, foreign key(`birth_id`) references `births`(`id`) on delete CASCADE, foreign key(`health_center_id`) references `health_centers`(`id`) on delete SET NULL, foreign key(`created_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: care
+Schema: CREATE TABLE `care` (`id` text, `birth_id` text not null, `care_type` text not null check (`care_type` in ('VITAMIN_K','OPHTHALMIC_OINTMENT','OTHER')), `administered` integer not null default '0', `administered_at` datetime, `product` text, `notes` text, `non_administration_reason` text, `created_by` text, `created_at` datetime default CURRENT_TIMESTAMP, foreign key(`birth_id`) references `births`(`id`) on delete CASCADE, foreign key(`created_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: birth_certificates
+Schema: CREATE TABLE `birth_certificates` (`id` text, `birth_id` text not null, `certificate_number` text, `pdf_path` text, `pdf_hash` text, `qr_code_data` text, `status` text not null default 'DRAFT' check (`status` in ('DRAFT','PENDING_VALIDATION','CERTIFIED','REJECTED','CANCELLED')), `legal_status` text not null default 'PRE_REGISTRATION' check (`legal_status` in ('PRE_REGISTRATION','SUBMITTED','LEGALLY_VALIDATED')), `issued_by` text, `issued_at` datetime, `validated_by` text, `validated_at` datetime, `rejection_reason` text, `notes` text, `created_at` datetime default CURRENT_TIMESTAMP, `updated_at` datetime default CURRENT_TIMESTAMP, foreign key(`birth_id`) references `births`(`id`) on delete CASCADE, foreign key(`issued_by`) references `users`(`id`) on delete SET NULL, primary key (`id`))
+
+Table: synchronization_queue
+Schema: CREATE TABLE `synchronization_queue` (`id` text, `entity_type` text not null check (`entity_type` in ('parent','child','birth','clinical_examination','screening','vaccine','care','birth_certificate')), `entity_id` text not null, `operation` text not null check (`operation` in ('CREATE','UPDATE','DELETE')), `payload` text not null, `status` text not null default 'PENDING' check (`status` in ('PENDING','PROCESSING','SYNCED','FAILED','CONFLICT')), `retry_count` integer not null default '0', `max_retries` integer not null default '3', `error_message` text, `conflict_data` text, `created_by` text, `created_at` datetime default CURRENT_TIMESTAMP, `processed_at` datetime, `synced_at` datetime, primary key (`id`))
+
+Table: audit_logs
+Schema: CREATE TABLE `audit_logs` (`id` text, `user_id` text, `username` text, `action` text not null, `entity_type` text, `entity_id` text, `old_values` text, `new_values` text, `ip_address` text, `user_agent` text, `request_id` text, `health_center_id` text, `result` text default 'SUCCESS' check (`result` in ('SUCCESS','FAILURE','PARTIAL')), `error_message` text, `created_at` datetime default CURRENT_TIMESTAMP, primary key (`id`))
+
+Table: province
+Schema: CREATE TABLE `province` (`province_id` varchar(255), `province_name` text, primary key (`province_id`))
+
+Table: territoire
+Schema: CREATE TABLE `territoire` (`territoire_id` varchar(255), `province_id` varchar(255), `territoire_name` text, primary key (`territoire_id`))
+
+--- INDICES ---
+Index: sqlite_autoindex_provinces_1 on provinces
+Schema: (Auto-generated)
+
+Index: provinces_code_unique on provinces
+Schema: CREATE UNIQUE INDEX `provinces_code_unique` on `provinces` (`code`)
+
+Index: sqlite_autoindex_communes_sectors_1 on communes_sectors
+Schema: (Auto-generated)
+
+Index: communes_sectors_territory_id_index on communes_sectors
+Schema: CREATE INDEX `communes_sectors_territory_id_index` on `communes_sectors` (`territory_id`)
+
+Index: sqlite_autoindex_villages_quarters_1 on villages_quarters
+Schema: (Auto-generated)
+
+Index: villages_quarters_commune_sector_id_index on villages_quarters
+Schema: CREATE INDEX `villages_quarters_commune_sector_id_index` on `villages_quarters` (`commune_sector_id`)
+
+Index: sqlite_autoindex_roles_1 on roles
+Schema: (Auto-generated)
+
+Index: roles_name_unique on roles
+Schema: CREATE UNIQUE INDEX `roles_name_unique` on `roles` (`name`)
+
+Index: sqlite_autoindex_users_1 on users
+Schema: (Auto-generated)
+
+Index: users_username_unique on users
+Schema: CREATE UNIQUE INDEX `users_username_unique` on `users` (`username`)
+
+Index: users_email_unique on users
+Schema: CREATE UNIQUE INDEX `users_email_unique` on `users` (`email`)
+
+Index: users_username_index on users
+Schema: CREATE INDEX `users_username_index` on `users` (`username`)
+
+Index: users_role_id_index on users
+Schema: CREATE INDEX `users_role_id_index` on `users` (`role_id`)
+
+Index: users_health_center_id_index on users
+Schema: CREATE INDEX `users_health_center_id_index` on `users` (`health_center_id`)
+
+Index: sqlite_autoindex_health_centers_1 on health_centers
+Schema: (Auto-generated)
+
+Index: health_centers_code_unique on health_centers
+Schema: CREATE UNIQUE INDEX `health_centers_code_unique` on `health_centers` (`code`)
+
+Index: health_centers_territory_id_index on health_centers
+Schema: CREATE INDEX `health_centers_territory_id_index` on `health_centers` (`territory_id`)
+
+Index: health_centers_code_index on health_centers
+Schema: CREATE INDEX `health_centers_code_index` on `health_centers` (`code`)
+
+Index: sqlite_autoindex_parents_1 on parents
+Schema: (Auto-generated)
+
+Index: parents_nin_unique on parents
+Schema: CREATE UNIQUE INDEX `parents_nin_unique` on `parents` (`nin`)
+
+Index: parents_nin_index on parents
+Schema: CREATE INDEX `parents_nin_index` on `parents` (`nin`)
+
+Index: parents_last_name_index on parents
+Schema: CREATE INDEX `parents_last_name_index` on `parents` (`last_name`)
+
+Index: parents_sync_status_index on parents
+Schema: CREATE INDEX `parents_sync_status_index` on `parents` (`sync_status`)
+
+Index: parents_created_by_index on parents
+Schema: CREATE INDEX `parents_created_by_index` on `parents` (`created_by`)
+
+Index: sqlite_autoindex_children_1 on children
+Schema: (Auto-generated)
+
+Index: children_system_id_unique on children
+Schema: CREATE UNIQUE INDEX `children_system_id_unique` on `children` (`system_id`)
+
+Index: children_father_id_index on children
+Schema: CREATE INDEX `children_father_id_index` on `children` (`father_id`)
+
+Index: children_mother_id_index on children
+Schema: CREATE INDEX `children_mother_id_index` on `children` (`mother_id`)
+
+Index: children_birth_datetime_index on children
+Schema: CREATE INDEX `children_birth_datetime_index` on `children` (`birth_datetime`)
+
+Index: children_sync_status_index on children
+Schema: CREATE INDEX `children_sync_status_index` on `children` (`sync_status`)
+
+Index: sqlite_autoindex_births_1 on births
+Schema: (Auto-generated)
+
+Index: births_child_id_unique on births
+Schema: CREATE UNIQUE INDEX `births_child_id_unique` on `births` (`child_id`)
+
+Index: births_child_id_index on births
+Schema: CREATE INDEX `births_child_id_index` on `births` (`child_id`)
+
+Index: births_health_center_id_index on births
+Schema: CREATE INDEX `births_health_center_id_index` on `births` (`health_center_id`)
+
+Index: births_registered_by_index on births
+Schema: CREATE INDEX `births_registered_by_index` on `births` (`registered_by`)
+
+Index: births_status_index on births
+Schema: CREATE INDEX `births_status_index` on `births` (`status`)
+
+Index: births_validated_at_index on births
+Schema: CREATE INDEX `births_validated_at_index` on `births` (`validated_at`)
+
+Index: sqlite_autoindex_clinical_examinations_1 on clinical_examinations
+Schema: (Auto-generated)
+
+Index: clinical_examinations_birth_id_unique on clinical_examinations
+Schema: CREATE UNIQUE INDEX `clinical_examinations_birth_id_unique` on `clinical_examinations` (`birth_id`)
+
+Index: sqlite_autoindex_screenings_1 on screenings
+Schema: (Auto-generated)
+
+Index: screenings_birth_id_index on screenings
+Schema: CREATE INDEX `screenings_birth_id_index` on `screenings` (`birth_id`)
+
+Index: screenings_type_index on screenings
+Schema: CREATE INDEX `screenings_type_index` on `screenings` (`type`)
+
+Index: sqlite_autoindex_vaccines_1 on vaccines
+Schema: (Auto-generated)
+
+Index: vaccines_birth_id_index on vaccines
+Schema: CREATE INDEX `vaccines_birth_id_index` on `vaccines` (`birth_id`)
+
+Index: vaccines_vaccine_type_index on vaccines
+Schema: CREATE INDEX `vaccines_vaccine_type_index` on `vaccines` (`vaccine_type`)
+
+Index: sqlite_autoindex_care_1 on care
+Schema: (Auto-generated)
+
+Index: care_birth_id_index on care
+Schema: CREATE INDEX `care_birth_id_index` on `care` (`birth_id`)
+
+Index: care_care_type_index on care
+Schema: CREATE INDEX `care_care_type_index` on `care` (`care_type`)
+
+Index: sqlite_autoindex_birth_certificates_1 on birth_certificates
+Schema: (Auto-generated)
+
+Index: birth_certificates_birth_id_unique on birth_certificates
+Schema: CREATE UNIQUE INDEX `birth_certificates_birth_id_unique` on `birth_certificates` (`birth_id`)
+
+Index: birth_certificates_certificate_number_unique on birth_certificates
+Schema: CREATE UNIQUE INDEX `birth_certificates_certificate_number_unique` on `birth_certificates` (`certificate_number`)
+
+Index: birth_certificates_birth_id_index on birth_certificates
+Schema: CREATE INDEX `birth_certificates_birth_id_index` on `birth_certificates` (`birth_id`)
+
+Index: birth_certificates_status_index on birth_certificates
+Schema: CREATE INDEX `birth_certificates_status_index` on `birth_certificates` (`status`)
+
+Index: birth_certificates_legal_status_index on birth_certificates
+Schema: CREATE INDEX `birth_certificates_legal_status_index` on `birth_certificates` (`legal_status`)
+
+Index: sqlite_autoindex_synchronization_queue_1 on synchronization_queue
+Schema: (Auto-generated)
+
+Index: synchronization_queue_status_index on synchronization_queue
+Schema: CREATE INDEX `synchronization_queue_status_index` on `synchronization_queue` (`status`)
+
+Index: synchronization_queue_entity_type_index on synchronization_queue
+Schema: CREATE INDEX `synchronization_queue_entity_type_index` on `synchronization_queue` (`entity_type`)
+
+Index: synchronization_queue_entity_id_index on synchronization_queue
+Schema: CREATE INDEX `synchronization_queue_entity_id_index` on `synchronization_queue` (`entity_id`)
+
+Index: synchronization_queue_created_at_index on synchronization_queue
+Schema: CREATE INDEX `synchronization_queue_created_at_index` on `synchronization_queue` (`created_at`)
+
+Index: sqlite_autoindex_audit_logs_1 on audit_logs
+Schema: (Auto-generated)
+
+Index: audit_logs_user_id_index on audit_logs
+Schema: CREATE INDEX `audit_logs_user_id_index` on `audit_logs` (`user_id`)
+
+Index: audit_logs_action_index on audit_logs
+Schema: CREATE INDEX `audit_logs_action_index` on `audit_logs` (`action`)
+
+Index: audit_logs_entity_type_entity_id_index on audit_logs
+Schema: CREATE INDEX `audit_logs_entity_type_entity_id_index` on `audit_logs` (`entity_type`, `entity_id`)
+
+Index: audit_logs_created_at_index on audit_logs
+Schema: CREATE INDEX `audit_logs_created_at_index` on `audit_logs` (`created_at`)
+
+Index: audit_logs_health_center_id_index on audit_logs
+Schema: CREATE INDEX `audit_logs_health_center_id_index` on `audit_logs` (`health_center_id`)
+
+Index: sqlite_autoindex_province_1 on province
+Schema: (Auto-generated)
+
+Index: sqlite_autoindex_territoire_1 on territoire
+Schema: (Auto-generated)
+

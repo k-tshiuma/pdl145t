@@ -1,0 +1,336 @@
+[2026-09-17 10:54:30] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 10:54:30] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 10:54:30] INFO: 📊 Environnement : development
+[2026-09-17 10:54:30] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 10:54:30] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 10:54:39] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 10:54:39] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 10:54:39] INFO: 📊 Environnement : development
+[2026-09-17 10:54:39] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 10:54:39] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 14:58:10] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:130:24) | {"path":"/api/births/a9da6f24-2a68-4516-b763-bd883bde0cfa/certificate/pdf","method":"GET"}
+[2026-09-17 14:58:19] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:130:24) | {"path":"/api/births/a9da6f24-2a68-4516-b763-bd883bde0cfa/certificate/pdf","method":"GET"}
+[2026-09-17 15:43:13] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 15:43:13] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 15:43:13] INFO: 📊 Environnement : development
+[2026-09-17 15:43:13] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 15:43:13] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 15:45:33] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 15:45:33] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 15:45:33] INFO: 📊 Environnement : development
+[2026-09-17 15:45:33] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 15:45:33] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 16:39:10] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:39:10] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 16:39:10] INFO: 📊 Environnement : development
+[2026-09-17 16:39:10] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:39:10] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 16:39:17] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:39:17] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 16:39:17] INFO: 📊 Environnement : development
+[2026-09-17 16:39:17] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:39:17] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 16:39:24] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:39:24] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 16:39:24] INFO: 📊 Environnement : development
+[2026-09-17 16:39:24] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:39:24] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 16:41:07] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:41:07] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 16:41:07] INFO: 📊 Environnement : development
+[2026-09-17 16:41:07] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 16:41:07] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 16:43:02] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/c299a836-fcef-4e25-acc9-f282c27de8d5/certificate/pdf","method":"GET"}
+[2026-09-17 16:43:10] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/c299a836-fcef-4e25-acc9-f282c27de8d5/certificate/pdf","method":"GET"}
+[2026-09-17 16:43:11] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/c299a836-fcef-4e25-acc9-f282c27de8d5/certificate/pdf","method":"GET"}
+[2026-09-17 22:37:28] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/births/draft"}
+[2026-09-17 22:37:28] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/births/draft"}
+[2026-09-17 23:41:01] WARN: [CONFLICT] Un parent avec le NIN 327086583 est déjà enregistré | {"path":"/api/parents"}
+[2026-09-17 23:41:43] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/459632ab-5991-4ff3-9704-7b8ed501a600/certificate/pdf","method":"GET"}
+[2026-09-17 23:41:48] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/459632ab-5991-4ff3-9704-7b8ed501a600/certificate/pdf","method":"GET"}
+[2026-09-17 23:48:33] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/459632ab-5991-4ff3-9704-7b8ed501a600/certificate/pdf","method":"GET"}
+[2026-09-17 23:48:34] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/459632ab-5991-4ff3-9704-7b8ed501a600/certificate/pdf","method":"GET"}
+[2026-09-17 23:48:39] ERROR: Erreur interne non gérée WinAnsi cannot encode "⚠" (0x26a0)
+Error: WinAnsi cannot encode "⚠" (0x26a0)
+    at Encoding.encodeUnicodeCodePoint (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\@pdf-lib\standard-fonts\lib\Encoding.js:23:23)
+    at StandardFontEmbedder.encodeTextAsGlyphs (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:124:35)
+    at StandardFontEmbedder.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\core\embedders\StandardFontEmbedder.ts:50:25)
+    at PDFFont.encodeText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFFont.ts:72:26)
+    at PDFPage.drawText (C:\xampp\htdocs\BCS\pdl145t\backend\node_modules\pdf-lib\src\api\PDFPage.ts:993:35)
+    at PDFService.generateCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\services\pdf.service.ts:133:10)
+    at async BirthsController.downloadCertificatePDF (C:\xampp\htdocs\BCS\pdl145t\backend\src\controllers\births.controller.ts:167:24) | {"path":"/api/births/459632ab-5991-4ff3-9704-7b8ed501a600/certificate/pdf","method":"GET"}
+[2026-09-17 23:52:26] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 23:52:26] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-17 23:52:26] INFO: 📊 Environnement : development
+[2026-09-17 23:52:26] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-17 23:52:26] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-17 23:54:07] INFO: PDF généré : cert_73b58639-fb76-4e8e-87fe-84affa727986_1789678447755.pdf (hash: 52d84816...)
+[2026-09-20 22:59:33] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-20 22:59:34] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-20 22:59:34] INFO: 📊 Environnement : development
+[2026-09-20 22:59:34] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-20 22:59:34] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-20 23:18:57] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/births/draft"}
+[2026-09-20 23:18:57] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/births/draft"}
+[2026-09-20 23:22:29] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-20 23:22:29] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-20 23:22:29] INFO: 📊 Environnement : development
+[2026-09-20 23:22:29] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-20 23:22:29] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 00:38:07] WARN: [CONFLICT] Un parent avec le NIN 327086583 est déjà enregistré | {"path":"/api/parents"}
+[2026-09-21 00:41:57] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:41:57] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 00:41:57] INFO: 📊 Environnement : development
+[2026-09-21 00:41:57] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:41:57] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 00:42:19] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:42:19] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 00:42:19] INFO: 📊 Environnement : development
+[2026-09-21 00:42:19] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:42:19] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 00:48:26] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:48:26] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 00:48:26] INFO: 📊 Environnement : development
+[2026-09-21 00:48:26] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:48:26] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 00:49:11] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:49:11] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 00:49:11] INFO: 📊 Environnement : development
+[2026-09-21 00:49:11] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 00:49:11] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 01:42:22] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:42:22] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 01:42:22] INFO: 📊 Environnement : development
+[2026-09-21 01:42:22] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:42:22] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 01:42:30] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:42:30] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 01:42:30] INFO: 📊 Environnement : development
+[2026-09-21 01:42:30] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:42:30] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 01:42:45] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:42:45] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 01:42:45] INFO: 📊 Environnement : development
+[2026-09-21 01:42:45] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:42:45] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 01:43:07] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:43:07] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 01:43:07] INFO: 📊 Environnement : development
+[2026-09-21 01:43:07] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:43:07] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 01:44:58] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:44:58] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 01:44:58] INFO: 📊 Environnement : development
+[2026-09-21 01:44:58] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 01:44:58] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:02:55] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:02:55] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 02:02:55] INFO: 📊 Environnement : development
+[2026-09-21 02:02:55] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:02:55] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:03:29] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:03:29] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 02:03:29] INFO: 📊 Environnement : development
+[2026-09-21 02:03:29] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:03:29] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:04:34] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:04:34] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 02:04:34] INFO: 📊 Environnement : development
+[2026-09-21 02:04:34] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:04:34] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:04:58] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:04:58] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 02:04:58] INFO: 📊 Environnement : development
+[2026-09-21 02:04:58] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:04:58] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:14:17] ERROR: Erreur interne non gérée insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Khisdai', 'Holon', 'Holon', '9', 'Centre', 'Hamapilim', 'Gush Dan', '1975-03-29', 'celibataire', '2026-09-20T23:14:17.368Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'aliciadd@hotmail.com', 'Alicia', 'F', '6e73a0ff-3ec7-486b-9250-5a3b721848a5', 'Deedee', '789456123', '+4477895623', 'Tshiamala', 'Banking', 'LOCAL', '2026-09-20T23:14:17.368Z') - SQLITE_ERROR: no such table: main.territories
+Error: insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Khisdai', 'Holon', 'Holon', '9', 'Centre', 'Hamapilim', 'Gush Dan', '1975-03-29', 'celibataire', '2026-09-20T23:14:17.368Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'aliciadd@hotmail.com', 'Alicia', 'F', '6e73a0ff-3ec7-486b-9250-5a3b721848a5', 'Deedee', '789456123', '+4477895623', 'Tshiamala', 'Banking', 'LOCAL', '2026-09-20T23:14:17.368Z') - SQLITE_ERROR: no such table: main.territories | {"path":"/api/parents","method":"POST"}
+[2026-09-21 02:14:46] ERROR: Erreur interne non gérée insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Khisdai', 'Holon', 'Holon', '9', 'Centre', 'Hamapilim', 'Gush Dan', '1975-03-29', 'celibataire', '2026-09-20T23:14:46.383Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'aliciadd@hotmail.com', 'Alicia', 'F', 'bc38549f-9d5d-42b6-9a8c-4f4ae5eeb87e', 'Deedee', '789456123', '+4477895623', 'Tshiamala', 'Banking', 'LOCAL', '2026-09-20T23:14:46.383Z') - SQLITE_ERROR: no such table: main.territories
+Error: insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Khisdai', 'Holon', 'Holon', '9', 'Centre', 'Hamapilim', 'Gush Dan', '1975-03-29', 'celibataire', '2026-09-20T23:14:46.383Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'aliciadd@hotmail.com', 'Alicia', 'F', 'bc38549f-9d5d-42b6-9a8c-4f4ae5eeb87e', 'Deedee', '789456123', '+4477895623', 'Tshiamala', 'Banking', 'LOCAL', '2026-09-20T23:14:46.383Z') - SQLITE_ERROR: no such table: main.territories | {"path":"/api/parents","method":"POST"}
+[2026-09-21 02:21:00] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:21:00] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 02:21:00] INFO: 📊 Environnement : development
+[2026-09-21 02:21:00] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 02:21:00] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:23:53] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 02:23:53] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 02:23:53] INFO: 📊 Environnement : development
+[2026-09-21 02:23:53] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 02:23:53] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 02:24:19] ERROR: Erreur interne non gérée insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-20T23:24:18.945Z', 1, NULL, 'SINGLE', '2026-09-20T23:24:18.945Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', NULL, 0, NULL, '', NULL, 'c78252c2-6ad6-426e-8f65-de23ff502069', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-20T23:24:18.945Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+Error: insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-20T23:24:18.945Z', 1, NULL, 'SINGLE', '2026-09-20T23:24:18.945Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', NULL, 0, NULL, '', NULL, 'c78252c2-6ad6-426e-8f65-de23ff502069', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-20T23:24:18.945Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed | {"path":"/api/births/draft","method":"POST"}
+[2026-09-21 02:24:19] ERROR: Erreur interne non gérée insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-20T23:24:18.947Z', 1, NULL, 'SINGLE', '2026-09-20T23:24:18.947Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', NULL, 0, NULL, '', NULL, 'c987c51d-911f-4f5b-a6a4-a0d58d4df469', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-20T23:24:18.947Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+Error: insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-20T23:24:18.947Z', 1, NULL, 'SINGLE', '2026-09-20T23:24:18.947Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', NULL, 0, NULL, '', NULL, 'c987c51d-911f-4f5b-a6a4-a0d58d4df469', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-20T23:24:18.947Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed | {"path":"/api/births/draft","method":"POST"}
+[2026-09-21 23:07:11] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:07:11] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:07:11] INFO: 📊 Environnement : development
+[2026-09-21 23:07:11] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:07:11] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:13:08] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:13:08] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:13:08] INFO: 📊 Environnement : development
+[2026-09-21 23:13:08] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:13:08] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:14:17] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:14:17] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:14:17] INFO: 📊 Environnement : development
+[2026-09-21 23:14:17] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:14:17] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:14:35] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:14:35] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:14:35] INFO: 📊 Environnement : development
+[2026-09-21 23:14:35] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:14:35] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:15:08] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:15:31] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:15:31] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:15:31] INFO: 📊 Environnement : development
+[2026-09-21 23:15:31] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t_v2.db
+[2026-09-21 23:15:31] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:16:27] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 23:16:27] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:16:27] INFO: 📊 Environnement : development
+[2026-09-21 23:16:27] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 23:16:27] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:38:51] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 23:38:51] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:38:51] INFO: 📊 Environnement : development
+[2026-09-21 23:38:51] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 23:38:51] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-21 23:43:45] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 23:43:45] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-21 23:43:45] INFO: 📊 Environnement : development
+[2026-09-21 23:43:45] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-21 23:43:45] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-22 00:39:48] ERROR: Erreur interne non gérée insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-21T21:39:48.596Z', 1, NULL, 'SINGLE', '2026-09-21T21:39:48.596Z', '04cc2dc9-b838-4734-8b28-0744906f955b', NULL, 0, NULL, '', NULL, 'a86a8079-6ff1-47f1-8767-24b4128bf5ef', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-21T21:39:48.596Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+Error: insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-21T21:39:48.596Z', 1, NULL, 'SINGLE', '2026-09-21T21:39:48.596Z', '04cc2dc9-b838-4734-8b28-0744906f955b', NULL, 0, NULL, '', NULL, 'a86a8079-6ff1-47f1-8767-24b4128bf5ef', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-21T21:39:48.596Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed | {"path":"/api/births/draft","method":"POST"}
+[2026-09-22 00:39:48] ERROR: Erreur interne non gérée insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-21T21:39:48.600Z', 1, NULL, 'SINGLE', '2026-09-21T21:39:48.600Z', '04cc2dc9-b838-4734-8b28-0744906f955b', NULL, 0, NULL, '', NULL, 'bf4ff412-6b9c-4e36-8db4-fd18daae6f2c', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-21T21:39:48.600Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
+Error: insert into `children` (`birth_datetime`, `birth_order`, `birth_place`, `birth_type`, `created_at`, `created_by`, `father_id`, `father_unknown`, `father_unknown_reason`, `first_names`, `gender`, `id`, `last_name`, `mother_id`, `mother_unknown`, `mother_unknown_reason`, `post_names`, `sync_status`, `updated_at`) values ('2026-09-21T21:39:48.600Z', 1, NULL, 'SINGLE', '2026-09-21T21:39:48.600Z', '04cc2dc9-b838-4734-8b28-0744906f955b', NULL, 0, NULL, '', NULL, 'bf4ff412-6b9c-4e36-8db4-fd18daae6f2c', '', NULL, 0, NULL, NULL, 'LOCAL', '2026-09-21T21:39:48.600Z') - SQLITE_CONSTRAINT: FOREIGN KEY constraint failed | {"path":"/api/births/draft","method":"POST"}
+[2026-09-22 11:13:38] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-22 11:13:38] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-22 11:13:38] INFO: 📊 Environnement : development
+[2026-09-22 11:13:38] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-22 11:13:38] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-22 23:51:04] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-22 23:51:04] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-22 23:51:04] INFO: 📊 Environnement : development
+[2026-09-22 23:51:04] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-22 23:51:04] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-22 23:52:17] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/dashboard/stats"}
+[2026-09-22 23:52:17] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/dashboard/stats"}
+[2026-09-22 23:52:17] WARN: [AUTHENTICATION_ERROR] Compte invalide ou désactivé | {"path":"/api/auth/refresh"}
+[2026-09-22 23:52:17] WARN: [AUTHENTICATION_ERROR] Compte invalide ou désactivé | {"path":"/api/auth/refresh"}
+[2026-09-23 13:48:52] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-23 13:48:52] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-23 13:48:52] INFO: 📊 Environnement : development
+[2026-09-23 13:48:52] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-23 13:48:52] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-23 13:52:41] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/dashboard/stats"}
+[2026-09-23 13:52:41] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/dashboard/stats"}
+[2026-09-23 14:20:27] ERROR: Erreur interne non gérée insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Makiala', 'Kinshasa', 'Lemba', '452bis', 'Kinshasa', 'Malunda', 'Mont Amba', '1970-02-14', 'marie', '2026-09-23T11:20:27.717Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'andre.kimbangu@gmail.fr', 'Andre', 'M', 'ac2dad15-c7ce-420a-a49c-6bf8aec0fe58', 'Kimbangu', '241456333', '+2438975898', 'Makiese', 'Macon', 'LOCAL', '2026-09-23T11:20:27.717Z') - SQLITE_ERROR: no such table: main.territories
+Error: insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Makiala', 'Kinshasa', 'Lemba', '452bis', 'Kinshasa', 'Malunda', 'Mont Amba', '1970-02-14', 'marie', '2026-09-23T11:20:27.717Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'andre.kimbangu@gmail.fr', 'Andre', 'M', 'ac2dad15-c7ce-420a-a49c-6bf8aec0fe58', 'Kimbangu', '241456333', '+2438975898', 'Makiese', 'Macon', 'LOCAL', '2026-09-23T11:20:27.717Z') - SQLITE_ERROR: no such table: main.territories | {"path":"/api/parents","method":"POST"}
+[2026-09-23 14:23:59] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-23 14:23:59] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-23 14:23:59] INFO: 📊 Environnement : development
+[2026-09-23 14:23:59] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-23 14:23:59] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-23 14:24:06] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-23 14:24:06] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-23 14:24:06] INFO: 📊 Environnement : development
+[2026-09-23 14:24:06] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-23 14:24:06] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-23 14:25:09] ERROR: Erreur interne non gérée insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Makiala', 'Kinshasa', 'Lemba', '452bis', 'Kinshasa', 'Malunda', 'Mont Amba', '1970-02-14', 'marie', '2026-09-23T11:25:09.231Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'andre.kimbangu@gmail.fr', 'Andre', 'M', 'c2b94e10-a3cf-499f-9728-7887adf90995', 'Kimbangu', '241456333', '+2438975898', 'Makiese', 'Macon', 'LOCAL', '2026-09-23T11:25:09.231Z') - SQLITE_ERROR: no such table: main.territories
+Error: insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Makiala', 'Kinshasa', 'Lemba', '452bis', 'Kinshasa', 'Malunda', 'Mont Amba', '1970-02-14', 'marie', '2026-09-23T11:25:09.231Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'andre.kimbangu@gmail.fr', 'Andre', 'M', 'c2b94e10-a3cf-499f-9728-7887adf90995', 'Kimbangu', '241456333', '+2438975898', 'Makiese', 'Macon', 'LOCAL', '2026-09-23T11:25:09.231Z') - SQLITE_ERROR: no such table: main.territories | {"path":"/api/parents","method":"POST"}
+[2026-09-23 14:25:26] ERROR: Erreur interne non gérée insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Makiala', 'Kinshasa', 'Lemba', '452bis', 'Kinshasa', 'Malunda', 'Mont Amba', '1970-02-14', 'marie', '2026-09-23T11:25:26.015Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'andre.kimbangu@gmail.fr', 'Andre', 'M', '4c17d328-3f5f-4105-b2ea-7f05e2514169', 'Kimbangu', '241456333', '+2438975898', 'Makiese', 'Macon', 'LOCAL', '2026-09-23T11:25:26.015Z') - SQLITE_ERROR: no such table: main.territories
+Error: insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Makiala', 'Kinshasa', 'Lemba', '452bis', 'Kinshasa', 'Malunda', 'Mont Amba', '1970-02-14', 'marie', '2026-09-23T11:25:26.015Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'andre.kimbangu@gmail.fr', 'Andre', 'M', '4c17d328-3f5f-4105-b2ea-7f05e2514169', 'Kimbangu', '241456333', '+2438975898', 'Makiese', 'Macon', 'LOCAL', '2026-09-23T11:25:26.015Z') - SQLITE_ERROR: no such table: main.territories | {"path":"/api/parents","method":"POST"}
+[2026-09-23 16:43:56] ERROR: Erreur interne non gérée insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Mongala', 'Kinshasa', 'Limete', '32bis', 'Kinshasa', 'Mongwalu', 'Funa', '1985-01-21', 'marie', '2026-09-23T13:43:56.439Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'amal234@yahoo.fr', 'Andre', 'M', '65ffdb2b-1746-483d-afd4-50adb4fad21b', 'Malangu', '999666333', '+2438545963', 'Nyembo', 'Chauffeur', 'LOCAL', '2026-09-23T13:43:56.439Z') - SQLITE_ERROR: no such table: main.territories
+Error: insert into `parents` (`address_avenue`, `address_city`, `address_commune_sector`, `address_number`, `address_province`, `address_quarter_village`, `address_territory`, `birth_date`, `civil_status`, `created_at`, `created_by`, `email`, `first_names`, `gender`, `id`, `last_name`, `nin`, `phone`, `post_names`, `profession`, `sync_status`, `updated_at`) values ('Mongala', 'Kinshasa', 'Limete', '32bis', 'Kinshasa', 'Mongwalu', 'Funa', '1985-01-21', 'marie', '2026-09-23T13:43:56.439Z', '0e4cc35e-9c5d-418b-9d0f-2319f18b8572', 'amal234@yahoo.fr', 'Andre', 'M', '65ffdb2b-1746-483d-afd4-50adb4fad21b', 'Malangu', '999666333', '+2438545963', 'Nyembo', 'Chauffeur', 'LOCAL', '2026-09-23T13:43:56.439Z') - SQLITE_ERROR: no such table: main.territories | {"path":"/api/parents","method":"POST"}
+[2026-09-24 00:58:49] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-24 00:58:49] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-09-24 00:58:49] INFO: 📊 Environnement : development
+[2026-09-24 00:58:49] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\backend\data\pdl145t.db
+[2026-09-24 00:58:49] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-09-24 00:59:54] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/dashboard/stats"}
+[2026-09-24 00:59:54] WARN: [AUTHENTICATION_ERROR] Session expirée — veuillez vous reconnecter | {"path":"/api/dashboard/stats"}
+[2026-10-03 00:19:11] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\births\backend\data\pdl145t.db
+[2026-10-03 00:19:11] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-10-03 00:19:11] INFO: 📊 Environnement : development
+[2026-10-03 00:19:11] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\births\backend\data\pdl145t.db
+[2026-10-03 00:19:11] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
+[2026-10-03 00:36:04] INFO: Connexion SQLite établie : C:\xampp\htdocs\BCS\pdl145t\births\backend\data\pdl145t.db
+[2026-10-03 00:36:04] INFO: 🚀 PDL-145T Backend démarré sur le port 3001
+[2026-10-03 00:36:04] INFO: 📊 Environnement : development
+[2026-10-03 00:36:04] INFO: 🗄️  Base de données : C:\xampp\htdocs\BCS\pdl145t\births\backend\data\pdl145t.db
+[2026-10-03 00:36:04] INFO: 🌐 CORS autorisé : http://localhost:5173, http://localhost:3000
