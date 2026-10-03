@@ -1,0 +1,8 @@
+{
+  "name": "PDL-145T — RDC Système National d'Enregistrement des Naissances & Statistiques Démographiques",
+  "description": "Plateforme nationale du Programme de Développement Local des 145 Territoires (PDL-145T) en RDC pour l'enregistrement des nouveau-nés, l'émission des certificats et l'analyse démographique territoriale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
