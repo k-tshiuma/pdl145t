@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #6A0DAD;
+  --color-app-surface: #FFFFFF;
+  --color-page-bg: #F6F6F9;
+  --color-primary-text: #2B2B3A;
+  --color-secondary-text: #7A7A8C;
+  --color-dark-card: #3B4540;
+
+  --color-sovereign-navy: #0C2340;
+  --color-congo-azure: #0077C8;
+  --color-golden-yellow: #FCD116;
+  --color-republican-crimson: #CE1126;
+  --color-validation-jade: #0E8A54;
+  --color-canvas: #F8FAFC;
+  --color-ink: #0F172A;
+  --color-border-struct: #CBD5E1;
+  --color-surface-dark: #06111E;
+
+  --color-pdl-primary: #0B3056;
+  --color-pdl-secondary: #D97706;
+  --color-pdl-danger: #DC2626;
+  --color-pdl-bg: #F8FAFC;
+  --color-pdl-surface: #FFFFFF;
+  --color-pdl-border: #E2E8F0;
+  --color-pdl-text: #0F172A;
+  --color-pdl-text-muted: #475569;
+
+  --color-surface-container: #e7eeff;
+  --color-on-surface-variant: #44474d;
+
+  --text-stat-value-lg: 36px;
+  --text-stat-value-lg--line-height: 44px;
+  --text-stat-value-lg--letter-spacing: -0.03em;
+  --text-stat-value-lg--font-weight: 700;
+
+  --text-display-lg: 40px;
+  --text-display-lg--line-height: 48px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-headline-lg: 28px;
+  --text-headline-lg--line-height: 36px;
+  --text-headline-lg--letter-spacing: -0.01em;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-md: 20px;
+  --text-headline-md--line-height: 28px;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-sm: 18px;
+  --text-headline-sm--line-height: 24px;
+  --text-headline-sm--font-weight: 600;
+
+  --text-body-lg: 17px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--font-weight: 500;
+
+  --text-body-md: 15px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--letter-spacing: 0.01em;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.04em;
+  --text-label-lg--font-weight: 600;
+
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--letter-spacing: 0.05em;
+  --text-label-md--font-weight: 600;
+
+  --text-label-sm: 10px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--letter-spacing: 0.06em;
+  --text-label-sm--font-weight: 700;
+
+  --spacing-min-touch: 52px;
+  --spacing-btn: 56px;
+  --spacing-dock: 76px;
+  --spacing-topbar: 64px;
+}
+
+/* Gradients */
+.bg-gradient-pink-red {
+  background-image: linear-gradient(to bottom right, #FF7A8A, #F0506E);
+}
+.bg-gradient-teal {
+  background-image: linear-gradient(to bottom right, #4FD1C5, #2AA9B8);
+}
+.bg-gradient-orange {
+  background-image: linear-gradient(to bottom right, #FFB84D, #FF9224);
+}
+.bg-gradient-blue {
+  background-image: linear-gradient(to bottom right, #5AA9FF, #3B7DFF);
+}
+.bg-gradient-purple {
+  background-image: linear-gradient(to bottom right, #9B7BFF, #6C4BE0);
+}
+.bg-gradient-crimson {
+  background-image: linear-gradient(to bottom right, #E04B6A, #B8324F);
+}
+.bg-gradient-plum {
+  background-image: linear-gradient(to bottom right, #8E44AD, #5B2A86);
+}
+
+.shadow-soft {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Mandatory indicator */
+.required-dot::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0077C8, #0E8A54, #FCD116);
+  vertical-align: middle;
+}
+
+.font-id {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: 0.05em;
+}
+
+.provisoire-banner {
+  background-color: rgba(252, 209, 22, 0.2);
+  border: 1px solid rgba(252, 209, 22, 0.4);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4d3e00;
+}
+
+.provisoire-banner::before {
+  content: '⚠️ ';
+}
+
+body {
+  margin: 0;
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
